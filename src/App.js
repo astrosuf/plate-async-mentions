@@ -37,11 +37,27 @@ function App() {
         key: "@",
         component: MentionElement,
       }),
+
       createMentionPlugin({
         key: "/",
         component: MentionElement,
+        props: (editor) => {
+          const onMentionClicked = () => {
+            let url = editor.element.url;
+            console.log("Opening url", url);
+            window.open(url, "_blank");
+          };
+          return { onClick: onMentionClicked };
+        },
         options: {
           trigger: "/",
+          createMentionNode: (item) => {
+            return {
+              id: item.key,
+              value: item.text,
+              url: item.data.url,
+            };
+          },
         },
       }),
       // marks
@@ -64,7 +80,9 @@ function App() {
         }}
       >
         <Toolbar />
+
         <MentionCombobox items={mentionItems} pluginKey="@" />
+
         <AsyncCombobox items={emptyItems} pluginKey="/" />
       </Plate>
       <pre>{JSON.stringify(debugValue, null, 1)}</pre>
