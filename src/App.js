@@ -43,7 +43,6 @@ function App() {
         key: "/",
         component: MentionElement,
         props: (editor) => {
-          console.log(editor);
           const onMentionClicked = () => {
             let url = editor.element.url;
             console.log("Opening url", url);
