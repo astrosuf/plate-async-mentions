@@ -9,6 +9,7 @@ import {
 } from "@udecode/plate";
 import { MentionCombobox, MentionElement } from "@udecode/plate-ui-mention";
 import { mentionItems } from "./constants/mentionItems";
+import { MdOpenInNew } from "react-icons/md";
 
 import {
   createBoldPlugin,
@@ -42,12 +43,29 @@ function App() {
         key: "/",
         component: MentionElement,
         props: (editor) => {
+          console.log(editor);
           const onMentionClicked = () => {
             let url = editor.element.url;
             console.log("Opening url", url);
             window.open(url, "_blank");
           };
-          return { onClick: onMentionClicked };
+
+          const renderLabel = (element) => {
+            return (
+              <div
+                title={element.url}
+                style={{ display: "flex", cursor: "pointer" }}
+              >
+                {element.value}
+                <MdOpenInNew size={15} />
+              </div>
+            );
+          };
+
+          return {
+            onClick: onMentionClicked,
+            renderLabel: renderLabel,
+          };
         },
         options: {
           trigger: "/",
@@ -82,7 +100,6 @@ function App() {
         <Toolbar />
 
         <MentionCombobox items={mentionItems} pluginKey="@" />
-
         <AsyncCombobox items={emptyItems} pluginKey="/" />
       </Plate>
       <pre>{JSON.stringify(debugValue, null, 1)}</pre>

@@ -12,10 +12,6 @@ import {
   getMentionOnSelectItem,
 } from "@udecode/plate-mention";
 
-import { isFunction } from "lodash";
-
-const asyncURL = ""; //this url is what me make async calls to
-
 export const AsyncCombobox = ({
   items,
   component,
@@ -26,6 +22,7 @@ export const AsyncCombobox = ({
   //introduce states for managing API calls
   const [isFetchingData, setFetchingData] = React.useState(false);
   const [localStateItems, setItems] = React.useState(items);
+  const loadingItem = [{ key: 0, text: "Loading Items" }];
 
   const arrayFlip = (fetchedData) => {
     let comboBoxItems = fetchedData.map((item) => {
@@ -84,7 +81,7 @@ export const AsyncCombobox = ({
         id={id}
         trigger={trigger}
         controlled
-        items={localStateItems}
+        items={isFetchingData ? loadingItem : localStateItems}
         onRenderItem={onRenderItem}
         component={component}
         onSelectItem={getMentionOnSelectItem({ key: pluginKey })}
