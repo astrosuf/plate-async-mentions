@@ -38,7 +38,7 @@ function App() {
         key: "@",
         component: MentionElement,
       }),
-
+      // createMentionPlugin(),
       createMentionPlugin({
         key: "/",
         component: MentionElement,

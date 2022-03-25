@@ -5,12 +5,13 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@udecode/plate": "10.4.2",
+    "@udecode/plate": "10.4.4",
     "@udecode/plate-basic-elements": "10.4.2",
     "@udecode/plate-basic-marks": "10.4.2",
     "@udecode/plate-combobox": "10.4.2",
+    "@udecode/plate-ui-combobox": "10.4.2",
     "@udecode/plate-mention": "10.4.2",
-    "@udecode/plate-mention-ui": "8.3.0",
+    "@udecode/plate-ui-mention": "10.4.2",
     "@udecode/plate-styled-components": "10.4.2",
     "styled-components": "5.3.3",
     "lodash": "4.17.21",
@@ -19,10 +20,10 @@
     "react-icons": "4.2.0",
     "react-scripts": "5.0.0",
     "remark-slate": "1.8.0",
-    "slate": "0.63.0",
-    "slate-history": "0.62.0",
-    "slate-hyperscript": "0.62.0",
-    "slate-react": "0.65.2"
+    "slate": "0.75.0",
+    "slate-history": "0.66.0",
+    "slate-hyperscript": "0.67.0",
+    "slate-react": "0.75.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

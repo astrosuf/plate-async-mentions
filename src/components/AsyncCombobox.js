@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useCallback, useRef } from "react";
 import { Combobox } from "@udecode/plate-ui-combobox";
 import {
   comboboxStore,
@@ -6,6 +6,7 @@ import {
   usePlateEditorRef,
   useEventEditorId,
   useActiveComboboxStore,
+  getPluginsByKey,
 } from "@udecode/plate";
 import {
   ELEMENT_MENTION,
@@ -50,6 +51,7 @@ export const AsyncCombobox = ({
   //store value identifying if combobox is open
   const open = comboboxStore.use.isOpen();
   const text = comboboxStore.use.text();
+  const search = useRef();
 
   const isOpen = useMemo(() => {
     if (!open || focusedEditorId !== editor.id || activeId !== id) {
@@ -57,6 +59,18 @@ export const AsyncCombobox = ({
     }
     return true;
   }, [open, editor.id, focusedEditorId, activeId, id]);
+
+  useEffect(() => {
+    if (text === null) {
+      search.current = text;
+      return;
+    }
+
+    if (isOpen && text !== search.current) {
+      console.log(text);
+      search.current = text;
+    }
+  }, [isOpen, text, search]);
 
   useEffect(() => {
     if (isOpen) {
@@ -79,8 +93,8 @@ export const AsyncCombobox = ({
     return (
       <Combobox
         id={id}
-        trigger={trigger}
         controlled
+        trigger={trigger}
         items={isFetchingData ? loadingItem : localStateItems}
         onRenderItem={onRenderItem}
         component={component}
