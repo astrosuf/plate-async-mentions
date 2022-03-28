@@ -2124,10 +2124,10 @@
   dependencies:
     "@udecode/plate-core" "10.4.2"
 
-"@udecode/plate-headless@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@udecode/plate-headless/-/plate-headless-10.4.2.tgz#db5019b95eec25fdbca5f2191bb1410f701699f1"
-  integrity sha512-O/iIrJ/0sMnp9/MWremVmm4UA8yjrtVEwZXDpxNVtJRl6GP8yvuGxCMorx0Kv9egoJZEMFR1o76nDWG/smy4LQ==
+"@udecode/plate-headless@10.4.5":
+  version "10.4.5"
+  resolved "https://registry.yarnpkg.com/@udecode/plate-headless/-/plate-headless-10.4.5.tgz#e81fb948bcd93745835d8e14d764670c8e056cc6"
+  integrity sha512-tw3/4UrdrUxq5HN55pynYnLO9F+NYcgC1mSi/dbHpTsyPHx3K2tpGL0+5tCUrKJaJfmaKj40EWlqP10c58TH4w==
   dependencies:
     "@udecode/plate-alignment" "10.4.2"
     "@udecode/plate-autoformat" "10.4.2"
@@ -2152,7 +2152,7 @@
     "@udecode/plate-link" "10.4.2"
     "@udecode/plate-list" "10.4.2"
     "@udecode/plate-media-embed" "10.4.2"
-    "@udecode/plate-mention" "10.4.2"
+    "@udecode/plate-mention" "10.4.5"
     "@udecode/plate-node-id" "10.4.2"
     "@udecode/plate-normalizers" "10.4.2"
     "@udecode/plate-paragraph" "10.4.2"
@@ -2246,10 +2246,10 @@
   dependencies:
     "@udecode/plate-core" "10.4.2"
 
-"@udecode/plate-mention@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@udecode/plate-mention/-/plate-mention-10.4.2.tgz#98c9fc2edddb87da90e6b7b275808e6f799b328b"
-  integrity sha512-00RVn2F67g1T/0OrYmQfTvmBq197DH2rHCR5nutYvClZkuNmBBmnh0mxgjS6WB9F4vpMunb01L+kinYNKA2DAg==
+"@udecode/plate-mention@10.4.5":
+  version "10.4.5"
+  resolved "https://registry.yarnpkg.com/@udecode/plate-mention/-/plate-mention-10.4.5.tgz#416dd5e6f8627bff39bd6d03e98932624a3fffa7"
+  integrity sha512-iymHFYqc9Kb67Vl7IkC6146Ac2wXHFbWiUwH8T2uVtoh/0MZwNplO7RlZAi0UQiUzC11cDBkl9Qdbn4JgPbBrw==
   dependencies:
     "@udecode/plate-combobox" "10.4.2"
     "@udecode/plate-core" "10.4.2"
@@ -2387,16 +2387,6 @@
     "@udecode/plate-styled-components" "10.4.2"
     "@udecode/plate-ui-toolbar" "10.4.2"
 
-"@udecode/plate-ui-combobox@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@udecode/plate-ui-combobox/-/plate-ui-combobox-10.4.2.tgz#b4dce74d172dee58b5133735af25d12cdbd893a3"
-  integrity sha512-i05wMWnOCGKao5QJYxSxdkTBEwfi1KztBjRZ0PlTXx5EE6PGwywByGc5fiLuyCyF0wVHQDOigxgOuiNBSOYAqw==
-  dependencies:
-    "@udecode/plate-combobox" "10.4.2"
-    "@udecode/plate-core" "10.4.2"
-    "@udecode/plate-styled-components" "10.4.2"
-    "@udecode/plate-ui-popper" "10.4.2"
-
 "@udecode/plate-ui-combobox@10.4.4":
   version "10.4.4"
   resolved "https://registry.yarnpkg.com/@udecode/plate-ui-combobox/-/plate-ui-combobox-10.4.4.tgz#bee2c9014683b34563abe2cc6293166eed90917f"
@@ -2492,25 +2482,14 @@
     "@udecode/plate-styled-components" "10.4.2"
     "@udecode/plate-ui-toolbar" "10.4.2"
 
-"@udecode/plate-ui-mention@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@udecode/plate-ui-mention/-/plate-ui-mention-10.4.2.tgz#629ac45523492152a1cfc2ee997519e93284c7be"
-  integrity sha512-fr3wjPgwnAroCR8frexZo2lpgCbzqzoTPyueh/t7VVBgYM/4WSsSK3PIRZ7+NYQxGEUCE/dOOeYnZww5059Ynw==
+"@udecode/plate-ui-mention@10.4.5":
+  version "10.4.5"
+  resolved "https://registry.yarnpkg.com/@udecode/plate-ui-mention/-/plate-ui-mention-10.4.5.tgz#7f937f1f3f1bea281894e1994b1c41a65d66e955"
+  integrity sha512-ul7oSS7ujBoyrKDHvD7ivavUhYk0NGmFaCFD/3Xpetr/AW48k39eQqNn96T8tuhzZ8sfGSD9j9mM8TR3OUoyhw==
   dependencies:
     "@udecode/plate-combobox" "10.4.2"
     "@udecode/plate-core" "10.4.2"
-    "@udecode/plate-mention" "10.4.2"
-    "@udecode/plate-styled-components" "10.4.2"
-    "@udecode/plate-ui-combobox" "10.4.2"
-
-"@udecode/plate-ui-mention@10.4.4":
-  version "10.4.4"
-  resolved "https://registry.yarnpkg.com/@udecode/plate-ui-mention/-/plate-ui-mention-10.4.4.tgz#905b87026b00498dec455c1210742fbf9eedd5e9"
-  integrity sha512-1/qYpAjmmwc5xmT+l1e78bhAevgMVLbSmdHHxPXYvSj0Ce/EChCNWLHMzSQPpHmoj5suvmf3o8Ecw6JL/m8rFA==
-  dependencies:
-    "@udecode/plate-combobox" "10.4.2"
-    "@udecode/plate-core" "10.4.2"
-    "@udecode/plate-mention" "10.4.2"
+    "@udecode/plate-mention" "10.4.5"
     "@udecode/plate-styled-components" "10.4.2"
     "@udecode/plate-ui-combobox" "10.4.4"
 
@@ -2566,12 +2545,12 @@
     react-popper "^2.2.4"
     react-use "^17.1.1"
 
-"@udecode/plate-ui@10.4.4":
-  version "10.4.4"
-  resolved "https://registry.yarnpkg.com/@udecode/plate-ui/-/plate-ui-10.4.4.tgz#024e561395c251c212f53d2a6abf61768fbb3ed8"
-  integrity sha512-mv0MO4fAIIcDsqyxfm5gtkAOSxPTfcr+Np0htfsZK6keXjLvGa2C/RzHFBvgnQzveCM+lgYCvOmmNJmnBMv4ow==
+"@udecode/plate-ui@10.4.5":
+  version "10.4.5"
+  resolved "https://registry.yarnpkg.com/@udecode/plate-ui/-/plate-ui-10.4.5.tgz#12a50114d8363fe305a698242524b0e6b2f0c7d1"
+  integrity sha512-04OCvywW7jKG+EFru1Y4ZmNrJLyNKVguv9DJ3oOzpr+/VbROvy6fpdgBxtyFdeTvu15HkxnWg0VCG9T3AfFPVQ==
   dependencies:
-    "@udecode/plate-headless" "10.4.2"
+    "@udecode/plate-headless" "10.4.5"
     "@udecode/plate-styled-components" "10.4.2"
     "@udecode/plate-ui-alignment" "10.4.2"
     "@udecode/plate-ui-block-quote" "10.4.2"
@@ -2586,20 +2565,20 @@
     "@udecode/plate-ui-link" "10.4.2"
     "@udecode/plate-ui-list" "10.4.2"
     "@udecode/plate-ui-media-embed" "10.4.2"
-    "@udecode/plate-ui-mention" "10.4.4"
+    "@udecode/plate-ui-mention" "10.4.5"
     "@udecode/plate-ui-placeholder" "10.4.2"
     "@udecode/plate-ui-popover" "10.4.2"
     "@udecode/plate-ui-popper" "10.4.2"
     "@udecode/plate-ui-table" "10.4.2"
     "@udecode/plate-ui-toolbar" "10.4.2"
 
-"@udecode/plate@10.4.4":
-  version "10.4.4"
-  resolved "https://registry.yarnpkg.com/@udecode/plate/-/plate-10.4.4.tgz#63db9691462fc62eae9ed5ab5bae5cc8ad10afab"
-  integrity sha512-i4NFrzXw7doLZW0aKX/isH8Oda/bJRB6kg8FN9hv5RTd8hFaVHIcLWpnh1Cn+pSAQ3gk3qpKKjsgfcWtRg8QEg==
+"@udecode/plate@10.4.5":
+  version "10.4.5"
+  resolved "https://registry.yarnpkg.com/@udecode/plate/-/plate-10.4.5.tgz#e0f64a5acd011004517779dc0423712e68980d56"
+  integrity sha512-3KTuwbUUxKNm2e9qQus+CUYDwOxr+paDJpLK7AVrF2PaWfEuv24dzrIqOTKuKRnhYeqZ477Tp7ToR7awHrraUQ==
   dependencies:
-    "@udecode/plate-headless" "10.4.2"
-    "@udecode/plate-ui" "10.4.4"
+    "@udecode/plate-headless" "10.4.5"
+    "@udecode/plate-ui" "10.4.5"
 
 "@udecode/zustood@0.4.4":
   version "0.4.4"
